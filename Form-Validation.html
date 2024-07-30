@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <link rel="stylesheet" href="Form-validation.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/3708edbb88.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="nav">
+        <img class="jklogo"  src="JK_logo-removebg-preview.png" alt="">
+        <ul class="nav-list">
+            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#"><i class="fa-brands fa-servicestack"></i>Servise</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>Contect</a>
+            <a href="#"><i class="fa-solid fa-headset"></i>Help</a>
+        </ul>
+        </div>
+    </header>
+      <div class="form-container">
+        <i class="fa-solid fa-user-large"></i>       
+         <form id="form">
+            <div class="form-control">
+                <i class="fas fa-user-circle"></i>
+                <input type="text" id="username" name="username" placeholder="Enter UserName" >
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <i class="fa-duotone fa-solid fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <i class="fa-solid fa-user-lock"></i>
+                <input type="password" id="password2" name="password2" placeholder="Confirm Password">
+                <small>Error message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+   
+    <script src="Form-validation.js"></script>
+</body>
+</html>
+
