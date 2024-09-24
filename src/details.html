@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Details</title>
+</head>
+<style>
+    .details-container{
+        width: 100%;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="details-container">
+        <h1>Submitted Details</h1>
+        <p id="usernameDetail"></p>
+        <p id="emailDetail"></p>
+        <p id="passwordDetail"></p>
+        <p id="password2Detail"></p>
+        
+    </div>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById("usernameDetail").innerText = "Username: " + urlParams.get('username');
+            document.getElementById("emailDetail").innerText = "Email: " + urlParams.get('email');
+            document.getElementById("passwordDetail").innerText = "Password: " + urlParams.get('password');
+            document.getElementById("password2Detail").innerText = "Confirm Password: " + urlParams.get('password2');
+        }
+    </script>
+</body>
+</html>
